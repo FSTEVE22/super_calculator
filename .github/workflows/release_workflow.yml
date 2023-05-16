@@ -35,7 +35,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/super_calculator:${{ env.GIT_TAG }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/super_calculator:${{ github.ref_name }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
        
