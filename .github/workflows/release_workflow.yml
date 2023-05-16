@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           go mod download
-          go get github.com/goreleaser/goreleaser@v0.186.0
+          go get github.com/goreleaser/goreleaser@latest
           sudo apt-get install -y rpm
       - name: Build and package for release
         run: |
