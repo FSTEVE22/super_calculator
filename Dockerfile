@@ -10,7 +10,7 @@ COPY . .
 
 RUN go build -o /calculator
 
-FROM gcr.io/distroless/base-debian10:latest
+FROM gcr.io/distroless/base-debian10:sha256-0828a5cfb40820d9110d4fb379edfca129ff5ec01d32d4f8acfd60173e2c49f3.sig
 
 WORKDIR /
 
