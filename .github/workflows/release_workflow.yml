@@ -43,5 +43,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
+          no-cache: true
           tags: ${{ secrets.DOCKER_USERNAME }}/super_calculator:${{ steps.docker-tag.outputs.tag }}
-          nocache: true
